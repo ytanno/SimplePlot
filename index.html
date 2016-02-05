@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/papaparse4.1.2.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/myplot.js"></script>	<!-- Only I Write Code -->
+
+	<style type="text/css">
+		body 
+		{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+
+		#container {
+			width: 600px;
+			height: 600px;
+		}
+
+		#plotForm {
+			width: 600px;
+			height: 400px;
+		}
+
+	
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Simple 3D Plot Program Second Step</h1>
+
+	<form  method="post" enctype="multipart/form-data" id="loadalignform">
+		<label for="loadInputFile">Load FR File</label>	
+		<input type="file" name="uploadfrsrcname" id="uploadfrfile" />
+	</form>
+	<p>My Second paragraph. If you double click, start animation !</p>
+	<canvas id="plotForm"> </canvas>
+	<!--<label id="output"></label>	-->
+
+	<script type="text/javascript">
+		InitFileAction();
+		InitPlot();
+	</script>
+
+</body>
+</html>
